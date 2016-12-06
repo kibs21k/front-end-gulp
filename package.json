@@ -1,0 +1,27 @@
+{
+  "name": "front-end-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-task-loader-recursive": "^1.1.2"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-task-loader-recursive": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kibs21k/front-end-gulp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kibs21k/front-end-gulp/issues"
+  },
+  "homepage": "https://github.com/kibs21k/front-end-gulp#readme"
+}
