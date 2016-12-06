@@ -7,6 +7,7 @@
     "gulp-task-loader-recursive": "^1.1.2"
   },
   "devDependencies": {
+    "del": "^2.2.2",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-task-loader-recursive": "^1.1.2"

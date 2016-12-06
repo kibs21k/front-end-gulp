@@ -1,8 +1,8 @@
 'use strict';
 var fs         = require('fs'),
-gulp           = require('gulp'),
+gulp           = require('gulp');
 
 require('gulp-task-loader-recursive')(gulp);
 
 
-gulp.task('default', []);
+gulp.task('default', ['remove']);
