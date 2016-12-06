@@ -1,5 +1,7 @@
-# Osx Stuff
+node_modules/
+dist/
 
+# Osx Stuff
 .DS_Store
 .AppleDouble
 .LSOverride
