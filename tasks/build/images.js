@@ -6,3 +6,5 @@ module.exports = function() {
     		.pipe(imagemin())
     		.pipe(gulp.dest('dest/images'))
 };
+
+module.exports.dependencies = [ 'remove' ];
