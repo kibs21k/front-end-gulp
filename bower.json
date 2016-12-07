@@ -1,0 +1,17 @@
+{
+  "name": "front-end-gulp",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Bojan Lazic <lazicbojanns@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kibs21k/front-end-gulp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
