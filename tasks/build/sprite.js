@@ -29,3 +29,5 @@ module.exports      = function() {
   // return spriteData.pipe(gulp.dest('dest/css/'));
 
 };
+
+module.exports.dependencies = [ 'remove' ];

@@ -6,4 +6,4 @@ htmlmin        = require('gulp-htmlmin');
 require('gulp-task-loader-recursive')(gulp);
 
 
-gulp.task('default', ['remove', 'build:images','build:fonts', 'build:sprite', 'build:javaScript']);
+gulp.task('default', ['remove', 'build:images','build:fonts', 'build:sprite', 'build:javaScript', 'build:css']);

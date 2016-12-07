@@ -14,8 +14,8 @@ module.exports            = function() {
     .pipe(uglify())
     .pipe(concat('script.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dest/js'));
-
+    .pipe(gulp.dest('dest/js'))
+    .pipe(browserSync.stream());
 };
 
 module.exports.dependencies = [ 'remove' ];
