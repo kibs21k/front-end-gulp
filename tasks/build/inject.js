@@ -17,4 +17,4 @@ module.exports              = function() {
 };
 
 module.exports.dependencies = [ 'remove', 'build:twig', 'build:css',
-'build:javaScript', 'build:concat', 'build:cache' ];
+'build:javaScript', 'build:concat', 'build:cache', 'build:bower' ];

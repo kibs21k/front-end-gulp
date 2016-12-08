@@ -1,0 +1,6 @@
+{
+	"directory" : "dest/bower_components",
+	"scripts" :  {
+		"postinstall" : "gulp build:bower"
+	}
+}
