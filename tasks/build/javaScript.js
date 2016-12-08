@@ -13,7 +13,7 @@ module.exports              = function() {
     .pipe(coffee({bare: true})
     .on('error', gutil.log))
     .pipe(uglify())
-    .pipe(concat('script.js'))
+    .pipe(concat('app.js'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dest/js'))
     .pipe(browserSync.stream());
