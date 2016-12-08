@@ -21,6 +21,7 @@ rucksack                    = require('rucksack-css'),
 
 // Code Fixes
 // ---------------------------------------------------------------------
+
 flexbugs                    = require('postcss-flexbugs-fixes'),
 doiuse                      = require('doiuse'),
 immutableCss                = require('immutable-css'),
@@ -28,7 +29,8 @@ postcss_sorting             = require('postcss-sorting'),
 // postcss_pxtorem              = require('postcss-pxtorem'),
 // postcss_zindex               = require('postcss-zindex'),
 
-// Adds at-2x keyword to background and background-image declarations to add retina support for images.
+// Adds at-2x keyword to background and background-image declarations to add
+// retina support for images.
 // postcss_at2x                = require('postcss-at2x'),
 
 // Transform #foo => [id="foo"]
