@@ -1,7 +1,6 @@
 var gulp                    = require('gulp'),
 inject                      = require('gulp-inject');
 
-
 module.exports              = function() {
 
   var target                = gulp.src('./dest/index.html');

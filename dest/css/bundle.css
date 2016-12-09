@@ -17,6 +17,13 @@ ul, ol {
   padding: 0;
   list-style: none; }
 
+body {
+  background: #339;
+  text-align: center; }
+
+h1 {
+  color: #fff; }
+
 @media screen and (min-width: 1280px) {
 
   h1 {

@@ -1,37 +1,26 @@
 'use strict';
-var fs         = require('fs'),
-gulp           = require('gulp'),
-concat         = require('gulp-concat'),
-wiredep        = require('wiredep'),
-uglify         = require('gulp-uglify'),
-csso           = require('gulp-csso'),
-inject         = require('gulp-inject'),
-rev            = require('gulp-rev');
+var fs      = require('fs'),
+gulp        = require('gulp'),
+browserSync = require('browser-sync').create();
 
 require('gulp-task-loader-recursive')(gulp);
 
-// // Inject Bower
-// gulp.task('bower', ['build:css'], injectBower);
-//
-// function injectBower() {
-//   var target = gulp.src('./src/index.html');
-//   var js     = gulp.src(wiredep().js);
-//   var css    = gulp.src(wiredep().css);
-//
-//   return target
-//   .pipe(inject(js.pipe(concat('bower.js'))
-//   .pipe(uglify())
-//   .pipe(rev())
-//   .pipe(gulp.dest('./dest/js'))))
-//
-//   .pipe(inject(css.pipe(concat('bower.css'))
-//   .pipe(csso())
-//   .pipe(rev())
-//   .pipe(gulp.dest('./dest/css'))))
-//
-//   .pipe(gulp.dest('./dest'));
-// };
+
+gulp.task('watch', ['build:css'] ,function () {
+// Static Server + watching scss/html files
+    browserSync.init({
+        server: "./dest"
+    });
+
+    gulp.watch('./src/scss/**/*.scss', ['build:css','build:concat',
+'build:inject',
+'build:bower'])
+    gulp.watch('./src/templates/**/*.jade', ['build:jade',
+'build:inject'])
+    gulp.watch('./src/templates/**/*.html', ['build:twig'])
+    gulp.watch('./dest/*.html').on('change', browserSync.reload)
+});
 
 gulp.task('default', ['remove', 'build:images','build:fonts', 'build:sprite',
 'build:javaScript', 'build:css', 'build:jade', 'build:twig', 'build:inject',
-'build:bower']);
+'build:bower', 'watch']);

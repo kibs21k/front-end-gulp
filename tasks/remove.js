@@ -7,7 +7,7 @@ module.exports = function() {
     'dest/fonts',
     'dest/images',
     'dest/js',
-    'dest/index.html',
+    // 'dest/**/*.html',
     // we don't want to clean this file though so we negate the pattern
     // '!dist/mobile/deploy.json'
   ]);

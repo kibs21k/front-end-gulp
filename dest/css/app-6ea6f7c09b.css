@@ -1,2 +1,0 @@
-body{background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4,h5,h6,ol,ul{margin:0}h1{font-size:calc(50px + 10*((100vw - 420px)/860))}p{font-size:calc(14px + 2*((100vw - 420px)/860))}ol,ul{padding:0;list-style:none}@media screen and (min-width:1280px){h1{font-size:60px}p{font-size:16px}}@media screen and (max-width:420px){h1{font-size:50px}p{font-size:14px}}
-.icon-example,.icon-example2{background-image:url(sprite.png);background-position:0 0;width:468px;height:364px}.icon-example2{background-position:-468px 0;width:473px;height:206px}
